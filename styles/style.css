@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background-color: rgb(58, 58, 58);
+    color: rgb(228, 226, 226);
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.header {
+    height: 6rem;
+    background-color: rgb(44, 45, 45);
+    vertical-align: middle;
+    text-align: center; 
+}
+.title {
+    line-height: 6rem;
+}
+.title h1 {
+    margin: auto;
+    display: block;
+    font-size: 1.5em;
+
+}
+.content {
+    margin: 4rem 10rem;
+    line-height: 1.7em;
+}
+
+.citation {
+    padding: 20px;
+    width: 70%;
+    margin: 10px 0;
+    background-color: rgb(95, 97, 97);
+    color: white;
+}
+.citation-body {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.citation-body::before {
+    content: "''";
+    margin-right: -5px;
+}
+
+.citation-body::after {
+    content: "''";
+    margin-left: -5px;
+
+}
+.citation-author {
+    font-size: .7em;
+    font-weight: 1000;
+}
