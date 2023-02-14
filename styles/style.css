@@ -1,85 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(44, 44, 44);
     color: rgb(228, 226, 226);
     margin: auto;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    height: 100%;
+    background-image: url("/img/maestro.jpeg");
 }
-a {
-    text-decoration: none;
-    color: cyan;
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .header {
-    height: 6rem;
+    height: 3rem;
     background-color: rgb(44, 45, 45);
-    vertical-align: middle;
+    vertical-align: bottom;
     text-align: center; 
+    line-height: 2.2em;
+}
+.header-link {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    
 }
 
-.title h1 {
-    margin: auto;
+.header-link a {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    text-decoration: none;
+    color: rgb(228, 226, 226);
+    font-size: 15px;
+    
+}
+
+.header-link a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.list-inline-item {
+    margin: 0 20px;
+}
+
+.title {
+    
     display: block;
-    font-size: 1.5em;
-    line-height: 6rem;
-
+    font-size: 2em;
+    line-height: 3rem;
+    margin-bottom: 30px;
 }
+
+
 .content {
     margin: 4rem 10rem;
     line-height: 1.7em;
-}
+    /* padding-bottom: 20rem; */
+    min-height: calc(100vh - 11rem);
+    background-image: url("img/maestro.jpeg");
 
 
-.citation {
-    padding: 20px;
-    width: 70%;
-    margin: 10px 0;
-    background-color: rgb(95, 97, 97);
-    color: white;
-    border-radius: 10px;
-}
-.citation-body {
-    font-size: 1em;
-    font-weight: 400;
 }
 
-.citation-body::before {
-    content: "''";
-    margin-right: -5px;
-}
-
-.citation-body::after {
-    content: "''";
-    margin-left: -5px;
-
-}
-.citation-author {
-    font-size: .7em;
-    margin-top: 10px;
+.bullet_points {
+    color: rgb(255, 187, 0);
     font-weight: 1000;
+    font-size: 50px;
+    line-height: 80px;
 }
 
-.image-titler {
-    max-width: 60%;
+.content_wrapper {
+    background-image: url("img/maestro.jpeg");
+}
+
+.main_bout_text {
     margin: auto;
-    margin-bottom: 4rem;
-    
-}
-.image-titler img {
-    margin: auto;
-
-    width: 100%;
+    margin-top: auto;
 }
 
-@media only screen and (max-width: 1200px){
-    .content {
-        margin: 4rem 1rem;
-        
-    }
-    .citation {
-        width: 100%;
-    }
-    
+.top_filler {
+    height: 10rem;
+    background-color: rgba(rgb(189, 159, 159), green, blue, alpha);
+}
+
+footer {
+    position: relative;
+    display: block;
+    /* height: 50px; */
+    /* margin-top: -50px; */
+    padding: 20px;
+}
+
+footer > .copyright {
+    color: darkgrey;
+    line-height: 1em;
+    font-size: smaller;
+    text-align: center;
 }
